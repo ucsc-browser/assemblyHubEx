@@ -1,0 +1,14 @@
+genome daph
+trackDb daph/trackDb.txt
+groups groups.txt
+description Daph genome
+twoBitPath daph/daph.2bit
+organism 
+defaultPos scaffold_1:10000-20000
+orderKey 1000
+scientificName Daphnia pulex
+htmlPath localFile.html
+blat 132.249.245.79 17779
+transBlat 132.249.245.79 17777
+#Note: Usually instead of localhost you will use the host name of where the gfserver is located (blat yourLab.yourInstitution.edu 17779) 
+#See more here: http://genomewiki.ucsc.edu/index.php/Assembly_Hubs#Adding_BLAT_servers

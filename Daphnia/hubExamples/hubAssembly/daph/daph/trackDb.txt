@@ -1,0 +1,9 @@
+track myTrack
+longLabel This track shows a match on the sequence AAAAAA
+shortLabel Motifs
+priority 10
+visibility pack
+color 0,120,0 
+bigDataUrl daph.bb
+type bigBed 5
+group varRep

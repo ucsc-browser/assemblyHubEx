@@ -1,0 +1,6 @@
+hub daph
+shortLabel daph hub
+longLabel Daph Hub
+genomesFile genomes.txt
+email genome-www@soe.ucsc.edu
+descriptionUrl http://daphniagenomes.org/downloads
