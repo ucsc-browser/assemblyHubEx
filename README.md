@@ -171,7 +171,7 @@ group varRep
 This hub should now work and you can load a URL to the hub like this on the My Hubs page:
 http://genome.ucsc.edu/cgi-bin/hgHubConnect
 
-http://hgwdev.cse.ucsc.edu/~brianlee/hubTestingAssembly/Daphnia/hubExamples/hubAssembly/daph/hub.txt
+https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt
 
 =====
 Now we can go a step further and turn on BLAT for this assembly hub.
@@ -221,15 +221,15 @@ NOTE: that when you stop your gfServers the blat feature will end.
 ...More about Links and Hubs:
 Each now hub added to the Browser gets a unique number (and it is different on genome-asia and genome-euro).
 When you discover your hub's number you can use it to build a link to the Browser to immediately display the hub:
-  http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_128011_daph&hubUrl=http://hgwdev.cse.ucsc.edu/~brianlee/hubTestingAssembly/Daphnia/hubExamples/hubAssembly/daph/hub.txt
+  http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_129603_daph&hubUrl=https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt
 
 You can also use that number to build a link to other sections like the blat tool:
-  http://genome.ucsc.edu/cgi-bin/hgBlat?db=hub_128011_daph&hubUrl=http://hgwdev.cse.ucsc.edu/~brianlee/hubTestingAssembly/Daphnia/hubExamples/hubAssembly/daph/hub.txt
+  http://genome.ucsc.edu/cgi-bin/hgBlat?db=hub_129603_daphh&hubUrl=https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt
 
-In these cases, on the machine genome.ucsc.edu the URL http://hgwdev.cse.ucsc.edu/~brianlee/hubTestingAssembly/Daphnia/hubExamples/hubAssembly/daph/hub.txt is associated with hub_####_genome = hub_128011_daph
+In these cases, on the machine genome.ucsc.edu the URL https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt is associated with hub_####_genome = hub_129603_daph
 
 If you created a new hub, or had a different genome in the hub, the db=hub_##new##_genomeNew would have to be updated.
 
 You can also build sessions to your hub, so that you can really have a detailed display happening.
-http://genome.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=brianlee&hgS_otherUserSessionName=hub_128011_daph
+http://genome.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=brianlee&hgS_otherUserSessionName=hub_129603_daph
  
