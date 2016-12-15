@@ -1,13 +1,20 @@
-http://genomewiki.ucsc.edu/index.php/Assembly_Hubs
-Resource on assembly hubs
+This repository has an example assembly hub, and outlines some steps
+used to create the assembly hub. It also has shows how GitHub is a
+the kind of server that allows byte-range requests needed to access
+the binary indexed files that exist hubs. 
 
-Provides info and a link to an example hub to start with:
+Resource on assembly hubs:
+http://genomewiki.ucsc.edu/index.php/Assembly_Hubs
+
+This link provides info and an example hub to start with:
 http://genome.ucsc.edu/goldenPath/help/hubQuickStartAssembly.html
 
 Pulls an example hub
+<pre>
 wget -r --no-parent --reject "index.html*" -nH --cut-dirs=3 http://genome.ucsc.edu/goldenPath/help/examples/hubExamples/hubAssembly/plantAraTha1/
+</pre>
 
-I suggest immediately testing the hub loads (it should without any changes) from where you are hosting the files.
+It is best to immediately test if the hub loads (it should without any changes) from where you are hosting the files.
 This is needed to be sure your server is allowing byte-range requests.
 
 Once you know this example hub works, it can be edited, I suggest making a duplicate renamed copy of the files that you'll edit for your new hub.
