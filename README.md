@@ -1,5 +1,6 @@
-This repository has an example assembly hub, and outlines some steps
-used to create the assembly hub. It also shows how GitHub is the kind
+This repository has an example assembly hub, and outlines the steps
+used to create the assembly hub from the original fasta file (Daphnia_pulex.allmasked.gz)
+of the organism <em>Daphnia pulex</em>. It also shows how GitHub is the kind
 of server that allows byte-range requests needed to access
 the binary indexed files that exist in hubs. 
 
