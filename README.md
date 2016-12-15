@@ -15,25 +15,28 @@ Once you know this example hub works, it can be edited, I suggest making a dupli
 1. First step
 --
 changed name of folders
+<pre>
 mv plantAraTha1/ daph
 mv araTha1/ daph
-
+</pre>
 2. Then changed the hub.txt
 ----
 Edit the hub.txt
-
+<pre>
 hub daph
 shortLabel daph hub
 longLabel Daph Hub
 genomesFile genomes.txt
 email genome-www@soe.ucsc.edu
 descriptionUrl http://daphniagenomes.org/downloads
+</pre>
 
 3. Then change the genomes.txt 
 ---
 Edit the genomes.txt
 -The defaultPos will need to be futher edited to have the correct chrom names.
 
+<pre>
 genome daph
 trackDb daph/trackDb.txt
 groups groups.txt
@@ -44,6 +47,7 @@ defaultPos chr1:1000000-2000000
 orderKey 1000
 scientificName Daphnia pulex
 htmlPath localFile.html
+</pre>
 
 4. Then change the trackDb.txt 
 --
@@ -51,6 +55,7 @@ Edit the trackDb.txt file
 
 Remove everything put in a place holder track we'll create later
 
+<pre>
 track myTrack
 longLabel My Track Name
 shortLabel My Track
@@ -60,18 +65,19 @@ color 0,0,0
 bigDataUrl daph.bb
 type bigBed 4
 group map
-
+</pre>
 
 5. Remove all the files now unrelated.
 ------
 
 In the location of the trackDb.txt (daph/ folder) remove all the other files
 
+<pre>
 rm a*
 rm *.html
 rm A*
 rm -r bbi
-
+</pre>
 
 6. Build the 2bit file that will be the genome sequence displayed for the Assembly Hub
 ----
@@ -106,10 +112,11 @@ This shows us that scaffold_1 4193030 is the largest item, we can set our defaul
 8. Update the correct name of chromosomes in genomes.txt 
 -------Update genomes.txt 
 
+<pre>
 defaultPos chr1:1000000-2000000
 --->
 defaultPos scaffold_1:10000-20000
-
+</pre>
 
 There is also the chance before the creation of the 2bit file to change the naming strategy in the input fasta. 
 
@@ -125,9 +132,11 @@ We'll build a quick bigBed file for the Hub
 Using the findMotif tool I'll output a bed file of all the matches of  AAAAAA 
 findMotif -motif=AAAAAA -strand=+ daph.2bit  > motif.bed
 
+<pre>
 $ head motif.bed 
 scaffold_1       80     86      1       1000    +
 scaffold_1       253    259     2       1000    +
+</pre>
 
 Then so this will load in a hub, this bed track will be turned into a binary indexed bigBed
 
@@ -144,6 +153,7 @@ Now the daph/trackDb.txt will have a daph.bb to find when we load the hub:
 
 Let's update the trackDb.txt to be more informative and set the display to full.
 
+<pre>
 track myTrack
 longLabel This track shows a match on the sequence AAAAAA
 shortLabel Motifs
@@ -153,6 +163,7 @@ color 0,120,0
 bigDataUrl daph.bb
 type bigBed 5
 group varRep
+</pre>
 
 (this 'group varRep' was defined in our ../groups.txt file as label Variation, it could be renamed).
 
@@ -171,8 +182,10 @@ Now we can go a step further and turn on BLAT for this assembly hub.
 11. Set up the gfservers
 See more here: http://genomewiki.ucsc.edu/index.php/Assembly_Hubs#Adding_BLAT_servers  
 
+<pre>
 gfServer start localhost 17777 -trans -mask daph.2bit &
 gfServer start localhost 17779 -stepSize=5 daph.2bit &
+</pre>
 
 Get your server name, and check the status:
 $ hostname -i   
@@ -184,11 +197,13 @@ Look for response (you can choose your own numbers):
 
 12. Edit the genomes.txt of your assembly hub to point to where your gfServes are located (two lines blat and transBlat).
 
+<pre>
 ...
 scientificName Daphnia pulex
 htmlPath localFile.html
 blat 132.249.245.79 17779
 transBlat 132.249.245.79 17777
+</pre>
 
 Now you can blat sequence:
 TCACATTTCCAAAGTTATTCCATATTCGTTTGTTTATATTTTGTTCGGC
