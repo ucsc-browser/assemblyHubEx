@@ -138,7 +138,9 @@ Some default tracks come for free (these are calculated on the fly in the browsi
 We'll build a quick bigBed file for the Hub 
 
 Using the findMotif tool I'll output a bed file of all the matches of  AAAAAA 
+<pre>
 findMotif -motif=AAAAAA -strand=+ daph.2bit  > motif.bed
+</pre>
 
 <pre>
 $ head motif.bed 
@@ -214,13 +216,15 @@ transBlat 132.249.245.79 17777
 </pre>
 
 Now you can blat sequence:
+<pre>
 TCACATTTCCAAAGTTATTCCATATTCGTTTGTTTATATTTTGTTCGGC
 GGACGTTTCCGCTATTACGGTTTCCATCATTACGACTCGCGGTCGTGCCT
 CATTATGAAATCATTTGAGGGGGAAATAAGGTTCTCAGCAACCAGGGGTA
-
+</pre>
 Or possible amino acid sequence:
+<pre>
 VGVALGPGSESDAVVPDETLLLGIYIWTPSGHLQFTQFKAGGLAGTSSAY
-
+</pre>
 ---
 NOTE: that when you stop your gfServers the blat feature will end.
 
