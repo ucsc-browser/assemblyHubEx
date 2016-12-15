@@ -1,7 +1,7 @@
 This repository has an example assembly hub, and outlines some steps
 used to create the assembly hub. It also shows how GitHub is the kind
 of server that allows byte-range requests needed to access
-the binary indexed files that exist hubs. 
+the binary indexed files that exist in hubs. 
 
 Resource on assembly hubs:
 http://genomewiki.ucsc.edu/index.php/Assembly_Hubs
