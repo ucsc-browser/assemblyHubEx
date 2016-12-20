@@ -245,8 +245,10 @@ If you created a new hub, or had a different genome in the hub, the db=hub_##new
 You can also build sessions to your hub, so that you can really have a detailed display happening.
 http://genome.ucsc.edu/cgi-bin/hgTracks?hgS_doOtherUser=submit&hgS_otherUserName=brianlee&hgS_otherUserSessionName=hub_129603_daph
  
+===
+Pulling this repository to build a hub:
+===
 
-13. Pulling this repository to build a hub:
 You can use this command if you have git installed:
 <pre>
 git clone https://github.com/ucsc-browser/assemblyHubEx.git /folders/exampleHub
@@ -261,15 +263,13 @@ You can also ssh into your GBiB to make pasting commands easier, where the passw
 ssh browser@localhost -p 1235
 </pre>
 
-Then you can clone this repository into the shared folders directory 
+Then you can clone this repository into the GBiB shared folders directory calling it exampleHub:
 <pre>
 sudo git clone https://github.com/ucsc-browser/assemblyHubEx.git /folders/exampleHub
 </pre>
-This put all the appropriate files in your shared folder. You should be able to load your hub with this URL 
+This put all the appropriate files in your GBiB shared folder. You should be able to load your hub with this URL 
 http://127.0.0.1:1234/folders/exampleHub/Daphnia/hubExamples/hubAssembly/daph/hub.txt
 
-Paste that address in the My Hubs section of the Track Hub Page:
+Paste that address in the GBiB My Hubs section of the Track Hub Page:
 http://127.0.0.1:1234/cgi-bin/hgHubConnect
 
-
-Since this is on the GBiB, you can also install blat.
