@@ -27,7 +27,8 @@ changed name of folders
 mv plantAraTha1/ daph
 mv araTha1/ daph
 </pre>
-2. Then changed the hub.txt
+
+2. Then change the hub.txt
 ----
 Edit the hub.txt
 <pre>
@@ -254,6 +255,8 @@ You can use this command if you have git installed:
 git clone https://github.com/ucsc-browser/assemblyHubEx.git /folders/exampleHub
 </pre>
 
+<h1>Using GBIB and this repository</h1>
+--
 If you are using a GBiB you can install git with this command:
 <pre>
 sudo apt install git
