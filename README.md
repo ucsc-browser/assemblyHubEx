@@ -20,9 +20,8 @@ This is needed to be sure your server is allowing byte-range requests.
 
 Once you know this example hub works, it can be edited, I suggest making a duplicate renamed copy of the files that you'll edit for your new hub.
 
-1. First step
+1. First step change folder names
 --
-changed name of folders
 <pre>
 mv plantAraTha1/ daph
 mv araTha1/ daph
