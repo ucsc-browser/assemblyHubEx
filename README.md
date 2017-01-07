@@ -92,16 +92,19 @@ rm -r bbi
 Now we'll build the 2bit file (daph.2bit described in genomes.txt) using the fasta.
 faToTwoBit
 
-Not possible, required a login to download:
-wget http://genome.jgi.doe.gov/Dappu1/download/Daphnia_pulex.allmasked.gz
+Acquire your fasta file, source for this example:
+http://genome.jgi.doe.gov/Dappu1/download/Daphnia_pulex.allmasked.gz
 
 decompress the fasta
 ----
 gzip -d Daphnia_pulex.allmasked.gz 
 
 make the 2bit
+Obtain utilities like faToTwoBit from:  http://hgdownload.soe.ucsc.edu/admin/exe/
 --
+<pre>
 $ faToTwoBit Daphnia_pulex.allmasked daph.2bit
+</pre>
 
 (note there are options like -noMask        Ignore lower-case masking in fa file.)
 NOTE: the utility faToTwoBit is available HERE: http://hgdownload.soe.ucsc.edu/admin/exe/ (as is the later findMotif tool) 
