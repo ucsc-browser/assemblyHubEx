@@ -237,9 +237,13 @@ NOTE: that when you stop your gfServers the blat feature will end.
 Each now hub added to the Browser gets a unique number (and it is different on genome-asia and genome-euro).
 When you discover your hub's number you can use it to build a link to the Browser to immediately display the hub:
   http://genome.ucsc.edu/cgi-bin/hgTracks?db=hub_129603_daph&hubUrl=https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt
+  
+ or without the hub_1234 you can use the genome name (?genome=(name you gave it)&hubUrl=location of files:
+ 
+  http://genome.ucsc.edu/cgi-bin/hgTracks?genome=daph&hubUrl=https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt
 
 You can also use that number to build a link to other sections like the blat tool (useful if you have your blat servers running):
-  http://genome.ucsc.edu/cgi-bin/hgBlat?db=hub_129603_daphh&hubUrl=https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt
+  http://genome.ucsc.edu/cgi-bin/hgBlat?db=hub_129603_daph&hubUrl=https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt
 
 In these cases, on the machine genome.ucsc.edu the URL https://raw.githubusercontent.com/ucsc-browser/assemblyHubEx/master/Daphnia/hubExamples/hubAssembly/daph/hub.txt is associated with hub_####_genome = hub_129603_daph
 
