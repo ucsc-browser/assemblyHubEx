@@ -42,7 +42,7 @@ descriptionUrl http://daphniagenomes.org/downloads
 3. Then change the genomes.txt 
 ---
 Edit the genomes.txt
--The defaultPos will need to be futher edited to have the correct chrom names.
+-The defaultPos will need to be further edited to have the correct chrom names.
 
 <pre>
 genome daph
