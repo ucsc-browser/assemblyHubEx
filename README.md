@@ -2,7 +2,8 @@ This repository has an example assembly hub, and outlines the steps
 used to create the assembly hub from the original fasta file (Daphnia_pulex.allmasked.gz)
 of the organism <em>Daphnia pulex</em> (<b>daph</b> used below). It also shows how GitHub is the kind
 of server that allows byte-range requests needed to access
-the binary indexed files that exist in hubs (provided files are under GitHub's file-size limit). 
+the binary indexed files that exist in hubs (provided files are under GitHub's file-size limit).
+Another location where academic scientists can host files for free that support byte-range requests is the NSF funded site CyVerse https://de.cyverse.org/
 
 Resource on assembly hubs:
 http://genomewiki.ucsc.edu/index.php/Assembly_Hubs
